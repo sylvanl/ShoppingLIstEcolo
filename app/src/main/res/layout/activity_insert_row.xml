@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    tools:context=".InsertRowActivity">
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/itemNameTxt"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Product"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/itemQuantityTxt"
+                android:layout_width="289dp"
+                android:layout_height="53dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Quantity"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/insertRowFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#13B797"
+                android:onClick="insertRow"
+                android:text="Insert Row"
+                android:textColor="#fff" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
